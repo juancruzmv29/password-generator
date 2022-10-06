@@ -12,7 +12,7 @@ const Password = ({ pass, handleDelete }) => {
     <Box>
         <Typography>{site}</Typography>
         <Box>
-            <Input value={password} type={showPass ? "password" : "text"} />
+            <Input readOnly={true} value={password} type={showPass ? "password" : "text"} />
             <ButtonGroup>
                 <Button onClick={() => setShowPass(!showPass)} >Show pass</Button>
                 <Button onClick={() => handleDelete(id)}>Delete pass</Button>
